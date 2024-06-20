@@ -1,0 +1,19 @@
+{
+  "name": "rolecheck",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clear": ".\\node_modules\\.bin\\rimraf .\\build\\ && echo \nCleared",
+    "compile_c": ".\\node_modules\\.bin\\node-gyp configure && .\\node_modules\\.bin\\node-gyp build && echo \nCompiled",
+    "test": "npm run clear && npm run compile_c && node src/js/main.js"
+  },
+  "author": "Gasan Omarov",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^8.0.0",
+    "node-gyp": "^10.1.0",
+    "rimraf": "^5.0.7"
+  }
+}
