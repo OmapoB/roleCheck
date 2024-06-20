@@ -1,1 +1,1 @@
-npm run test | start http://localhost:4000
+npm install & npm run test | start http://localhost:4000
