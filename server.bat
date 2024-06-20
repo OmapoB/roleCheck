@@ -1,0 +1,1 @@
+npm run test | start http://localhost:4000
